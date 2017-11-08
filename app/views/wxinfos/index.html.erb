@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wxinfos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Appid</th>
+      <th>Appsecret</th>
+      <th>Secret key</th>
+      <th>Token</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wxinfos.each do |wxinfo| %>
+      <tr>
+        <td><%= wxinfo.appid %></td>
+        <td><%= wxinfo.appsecret %></td>
+        <td><%= wxinfo.secret_key %></td>
+        <td><%= wxinfo.token %></td>
+        <td><%= link_to 'Show', wxinfo %></td>
+        <td><%= link_to 'Edit', edit_wxinfo_path(wxinfo) %></td>
+        <td><%= link_to 'Destroy', wxinfo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wxinfo', new_wxinfo_path %>

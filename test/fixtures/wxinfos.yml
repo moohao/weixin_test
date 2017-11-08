@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  appid: MyString
+  appsecret: MyString
+  secret_key: MyString
+  token: MyString
+
+two:
+  appid: MyString
+  appsecret: MyString
+  secret_key: MyString
+  token: MyString

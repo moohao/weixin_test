@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Appid:</strong>
+  <%= @wxinfo.appid %>
+</p>
+
+<p>
+  <strong>Appsecret:</strong>
+  <%= @wxinfo.appsecret %>
+</p>
+
+<p>
+  <strong>Secret key:</strong>
+  <%= @wxinfo.secret_key %>
+</p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @wxinfo.token %>
+</p>
+
+<%= link_to 'Edit', edit_wxinfo_path(@wxinfo) %> |
+<%= link_to 'Back', wxinfos_path %>
